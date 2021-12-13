@@ -1,0 +1,87 @@
+<html>
+<body bgcolor="red">
+<center>
+    <title color="red">CKD Prediction</title>
+
+    <style>
+        body { 
+            font-family: sans-serif;
+            }
+
+        h1 {
+            color: green;
+            }
+
+        p {
+           color: #FFFFFF;
+           text-align: center;
+           margin: 25px 0;
+           font-size: 20px;
+           }
+
+        form {
+            margin: 15px;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #24a0ed;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 16px;
+          }
+    
+          .button:hover {
+             background-color: #8B0000;	
+             color: white;
+          }
+
+          img {
+              width: 50%;
+              height: 50%;
+          }
+    </style>
+          
+
+    <h1 color="green">Chronic Kidney Disease Prediction</h1>
+
+    <form action="/predict" method="POST">
+        <p>Age: <input type="text" name="age" placeholder="Age" required="required"></p>
+        <p>BP: <input type="text" name="bp" placeholder="BP level" required="required"></p>
+        <p>SG: <input type="text" name="sg" placeholder="Specific Gravity Level"></p>
+        <p>Al: <input type="text" name="al" placeholder="Albumin Level" required="required"></p>
+        <p>SU: <input type="text" name="su" placeholder="Sugar Level" required="required"></p>
+        <p>RBC: <input type="text" name="rbc" placeholder="Condition of RBC(normal/abnormal)" required="required"></p>
+        <p>PC: <input type="text" name="pc" placeholder="Condition of Pus Cells(normal/abnormal)" required="required"></p>
+        <p>PCC: <input type="text" name="pcc" placeholder="Pus Cells (present/notpresent)" required="required"></p>
+        <p>Bacteria: <input type="text" name="ba" placeholder="Bacteria (present/notpresent)" required="required"></p>
+        <p>BGR: <input type="text" name="bgr" placeholder="Blood Glucose Random Level"></p>
+        <p>BU: <input type="text" name="bu" placeholder="Blood Urea Level" required="required"></p>
+        <p>SC: <input type="text" name="sc" placeholder="Serum creatinine Level"></p>
+        <p>SOD: <input type="text" name="sod" placeholder="Sodium Level" required="required"></p>
+        <p>POT: <input type="text" name="pot" placeholder="Potassium Level" required="required"></p>
+        <p>HEMO: <input type="text" name="hemo" placeholder="hemoglobin" required="required"></p>
+        <p>PCV: <input type="text" name="pcv" placeholder="packed cell volume" required="required"></p>
+        <p>WC: <input type="text" name="wc" placeholder="WBC count" required="required"></p>
+        <p>RC: <input type="text" name="rc" placeholder="RBC count" required="required"></p>
+        <p>HTN: <input type="text" name="htn" placeholder="Hypertension(yes/no)" required="required"></p>
+        <p>DM: <input type="text" name="dm" placeholder="Diabetes mellitus(yes/no)" required="required"></p>
+        <p>CAD: <input type="text" name="cad" placeholder="Coronary artery disease(yes/no)"></p>
+        <p>APPET: <input type="text" name="appet" placeholder="Appetite(good/poor)" required="required"></p>
+        <p>PE: <input type="text" name="pe" placeholder="Pedal edema(yes/no)"></p>
+        <p>ANE: <input type="text" name="ane" placeholder="Anemia(yes/no)" required="required"></p>
+        
+
+        <button class="button" type="submit" value="predict">Predict</button>
+    </form>
+
+    <img src="https://medicaldialogues.in/h-upload/2020/12/30/145030-chronic-kidney-disease.webp" alt="CKD">
+</center>
+</body>
+</html>
